@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2beta29
+kind: Config
+metadata: 
+  name: anatomia
+deploy:
+  kubectl:
+    manifests:
+      - ./ks3/backend.yaml
+      - ./ks3/db.yaml
+      - ./ks3/frontend.yaml
